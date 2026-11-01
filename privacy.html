@@ -30,15 +30,18 @@ footer{margin-top:24px;color:var(--muted);font-size:.85rem;text-align:center}
 <li><b>بيانات الحساب:</b> البريد الإلكتروني وكلمة المرور (تُدار عبر خدمة المصادقة ولا نطّلع على كلمة المرور نفسها).</li>
 <li><b>بيانات الملف الشخصي:</b> الاسم الكامل واسم المستخدم والدور (مورّد/مشتري) والدولة والمدينة، ورقم الجوال والموقع الإلكتروني والنبذة والصورة الشخصية إن أضفتها.</li>
 <li><b>المحتوى الذي تنشره:</b> العروض وطلبات الشراء وما يرفق بها من صور وفيديو ووصف.</li>
-<li><b>الرسائل:</b> نصوص المحادثات والمرفقات والرسائل الصوتية التي ترسلها.</li>
+<li><b>الرسائل:</b> نصوص المحادثات والمرفقات التي ترسلها (صور وفيديو ومستندات مثل PDF وWord وExcel حتى 10 ميجابايت، ورسائل صوتية).</li>
+<li><b>حالة الرسائل:</b> نسجّل وقت وصول الرسالة ووقت قراءتها لنعرض للطرف الآخر علامات (أُرسلت / وصلت / قُرئت).</li>
 <li><b>التفاعلات:</b> التقييمات والمراجعات، والبلاغات، وقائمة المستخدمين الذين حظرتهم.</li>
-<li><b>طلبات التوثيق:</b> المعلومات التي تقدّمها إن طلبت توثيق حسابك.</li>
-<li><b>على جهازك:</b> تفضيلات مثل اللغة والمظهر والمفضلة تُحفظ محلياً على جهازك.</li>
+<li><b>المحفوظات:</b> العروض والطلبات التي تحفظها تُخزَّن في حسابك لتجدها على أي جهاز.</li>
+<li><b>الإشعارات داخل التطبيق:</b> نحتفظ بإشعارات حسابك، مثل مراجعة جديدة، ونتيجة طلب التوثيق، وحفظ أحدهم لمنشورك، وطلب عرض سعر أو تقديم عرض على منشورك.</li>
+<li><b>طلبات التوثيق:</b> المعلومات والمستندات التي تقدّمها إن طلبت توثيق حسابك، وتُحفظ في تخزين خاص لا يصل إليه المستخدمون الآخرون.</li>
+<li><b>على جهازك:</b> تفضيلات مثل اللغة والمظهر تُحفظ محلياً على جهازك.</li>
 </ul>
 <h2>أذونات الجهاز</h2>
 <ul>
 <li><b>الميكروفون:</b> لا يُستخدم إلا عند تسجيل رسالة صوتية بطلب منك.</li>
-<li><b>الصور والملفات:</b> نصل فقط إلى ما تختاره بنفسك لإرفاقه.</li>
+<li><b>الصور والفيديو والملفات:</b> نصل فقط إلى ما تختاره بنفسك لإرفاقه.</li>
 <li>لا نجمع موقعك الجغرافي الدقيق.</li>
 </ul>
 <h2>كيف نستخدم بياناتك</h2>
@@ -47,18 +50,20 @@ footer{margin-top:24px;color:var(--muted);font-size:.85rem;text-align:center}
 <li>عرض ملفك وعروضك وطلباتك للمستخدمين الآخرين وفق طبيعة المنصة.</li>
 <li>الحماية من إساءة الاستخدام ومعالجة البلاغات والتوثيق.</li>
 <li>إرسال رسائل الحساب الضرورية مثل تأكيد البريد.</li>
+<li>إظهار إشعارات داخل التطبيق عن نشاط حسابك. لا نرسل حالياً إشعارات خارج التطبيق.</li>
 </ul>
 <p>لا نبيع بياناتك، ولا نعرض إعلانات، ولا نستخدم أدوات تحليل أو تتبع سلوكي تابعة لجهات خارجية.</p>
 <h2>ما يظهر للآخرين</h2>
 <ul>
 <li>ملفك الشخصي وعروضك وطلباتك ظاهرة للمستخدمين الآخرين.</li>
-<li>رسائلك ظاهرة لأطراف المحادثة فقط.</li>
+<li>رسائلك ومرفقاتها ظاهرة لأطراف المحادثة فقط، ويرى الطرف الآخر متى وصلت رسائلك وقُرئت.</li>
+<li>عند حفظ مستخدم لمنشورك تصلك إشعارات بعدد الحفظ دون كشف هوية من حفظه.</li>
 <li>يمكنك الإبلاغ عن مستخدم أو منشور وحظر أي مستخدم من داخل التطبيق.</li>
 </ul>
 <h2>مزوّدو الخدمة</h2>
-<p>نستخدم خدمة <b>Supabase</b> لاستضافة قاعدة البيانات والمصادقة وتخزين الملفات. تُنقل البيانات عبر اتصال مشفّر (HTTPS)، وتُطبَّق قواعد صلاحيات تمنع وصول المستخدمين إلى بيانات غيرهم الخاصة.</p>
+<p>نستخدم خدمة <b>Supabase</b> لاستضافة قاعدة البيانات والمصادقة وتخزين الملفات. تُنقل البيانات عبر اتصال مشفّر (HTTPS)، وتُطبَّق قواعد صلاحيات تمنع وصول المستخدمين إلى بيانات غيرهم الخاصة. تُحفظ مرفقات المحادثات في تخزين خاص ويُوصل إليها عبر روابط مؤقتة.</p>
 <h2>الاحتفاظ بالبيانات وحذفها</h2>
-<p>نحتفظ ببياناتك ما دام حسابك قائماً. يمكنك حذف حسابك وبياناتك من داخل التطبيق (الحساب ← حذف الحساب) أو عبر <a href="delete-account.html">صفحة طلب الحذف</a>. قد تبقى نسخ احتياطية مؤقتة لدى مزوّد الاستضافة لفترة محدودة قبل إزالتها نهائياً.</p>
+<p>نحتفظ ببياناتك ما دام حسابك قائماً. يمكنك حذف حسابك وبياناتك من داخل التطبيق (الحساب ← حذف الحساب) أو عبر <a href="delete-account.html">صفحة طلب الحذف</a>. عند حذف الحساب تُحذف بياناتك وما يرتبط بها من عروض وطلبات ومحفوظات وإشعارات ومحادثات ومرفقات. قد تبقى نسخ احتياطية مؤقتة لدى مزوّد الاستضافة لفترة محدودة قبل إزالتها نهائياً.</p>
 <h2>الأطفال</h2>
 <p>التطبيق موجّه لأنشطة الأعمال وليس للأطفال دون 18 عاماً، ولا نجمع بيانات الأطفال عن علم.</p>
 <h2>حقوقك</h2>
@@ -77,15 +82,18 @@ footer{margin-top:24px;color:var(--muted);font-size:.85rem;text-align:center}
 <li><b>Account data:</b> email address and password (handled by our authentication service; we never see your plain password).</li>
 <li><b>Profile data:</b> full name, username, role (supplier/buyer), country and city, and optionally phone number, website, bio and profile photo.</li>
 <li><b>Content you publish:</b> offers and purchase requests, with their descriptions, images and videos.</li>
-<li><b>Messages:</b> chat text, attachments and voice messages you send.</li>
+<li><b>Messages:</b> chat text and attachments you send (images, videos, documents such as PDF, Word and Excel up to 10 MB, and voice messages).</li>
+<li><b>Message status:</b> we record when a message is delivered and when it is read, so the other person can see sent / delivered / read marks.</li>
 <li><b>Interactions:</b> ratings and reviews, reports, and the list of users you block.</li>
-<li><b>Verification requests:</b> the information you submit if you ask to verify your account.</li>
-<li><b>On your device:</b> preferences such as language, theme and favorites are stored locally on your device.</li>
+<li><b>Saved posts:</b> offers and requests you save are stored in your account so you can find them on any device.</li>
+<li><b>In-app notifications:</b> we keep your account notifications, such as a new review, the result of a verification request, someone saving your post, and a quote request or offer on your post.</li>
+<li><b>Verification requests:</b> the information and documents you submit if you ask to verify your account, kept in private storage that other users cannot access.</li>
+<li><b>On your device:</b> preferences such as language and theme are stored locally on your device.</li>
 </ul>
 <h2>Device permissions</h2>
 <ul>
 <li><b>Microphone:</b> used only when you record a voice message.</li>
-<li><b>Photos and files:</b> we only access what you choose to attach.</li>
+<li><b>Photos, videos and files:</b> we only access what you choose to attach.</li>
 <li>We do not collect your precise location.</li>
 </ul>
 <h2>How we use your data</h2>
@@ -94,18 +102,20 @@ footer{margin-top:24px;color:var(--muted);font-size:.85rem;text-align:center}
 <li>To show your profile, offers and requests to other users, as the marketplace requires.</li>
 <li>To prevent abuse, handle reports and process verification.</li>
 <li>To send essential account emails such as email confirmation.</li>
+<li>To show in-app notifications about activity on your account. We do not currently send notifications outside the app.</li>
 </ul>
 <p>We do not sell your data, we show no ads, and we use no third-party analytics or behavioral tracking.</p>
 <h2>What others can see</h2>
 <ul>
 <li>Your profile, offers and requests are visible to other users.</li>
-<li>Your messages are visible only to the people in the conversation.</li>
+<li>Your messages and attachments are visible only to the people in the conversation, and the other person can see when your messages were delivered and read.</li>
+<li>When someone saves your post you are notified of the number of saves, without learning who saved it.</li>
 <li>You can report users or posts and block any user from within the app.</li>
 </ul>
 <h2>Service providers</h2>
-<p>We use <b>Supabase</b> to host our database, authentication and file storage. Data travels over encrypted connections (HTTPS), and access rules prevent users from reading each other's private data.</p>
+<p>We use <b>Supabase</b> to host our database, authentication and file storage. Data travels over encrypted connections (HTTPS), and access rules prevent users from reading each other's private data. Chat attachments are kept in private storage and opened through temporary links.</p>
 <h2>Retention and deletion</h2>
-<p>We keep your data while your account exists. You can delete your account and data inside the app (Account → Delete account) or through the <a href="delete-account.html">deletion request page</a>. Temporary backups may remain with our hosting provider for a limited time before they are permanently removed.</p>
+<p>We keep your data while your account exists. You can delete your account and data inside the app (Account → Delete account) or through the <a href="delete-account.html">deletion request page</a>. When your account is deleted, your data and everything linked to it, including offers, requests, saved posts, notifications, conversations and attachments, is deleted. Temporary backups may remain with our hosting provider for a limited time before they are permanently removed.</p>
 <h2>Children</h2>
 <p>The app is intended for business use and not for people under 18. We do not knowingly collect children's data.</p>
 <h2>Your rights</h2>
